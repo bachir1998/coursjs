@@ -1,4 +1,4 @@
-const Anagrammes = (param1='ab', param2)=>{
+const Anagrammes = (param1, param2)=>{
     if( (param1.length==param2.length)  && param1 && param2)
     {
         if(param1.split("").sort().join('')==param2.split("").sort().join(''))
