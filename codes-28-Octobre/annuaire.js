@@ -5,15 +5,21 @@ contact=[{nom: "gueye",prenom: "Bachir",telephone: '0987654333'},
 console.log(contact)
 
 const annuaire = (param)=>{
-    
+   let results = ""; 
    for(let i=0;i<contact.length;i++){
-     if(contact[i].nom.includes(param))
+     if(contact[i].nom.includes(param) || contact[i].telephone.includes(param) )
      {
-        alert(contact[i].nom+" "+contact[i].telephone)
+       
+        results = results + "Prénom : "+contact[i].prenom+"\n Nom : "+contact[i].nom+" "+contact[i].telephone+"\n\n";
      }
-     else if(contact[i].telephone.includes(param)){
-        alert(contact[i].nom+" "+contact[i].telephone)
-     }
+    
+  }
+
+  if(results!=""){
+   alert(results)
+  }
+  else{
+     alert('Contact inexistant')
   }
 }
 
