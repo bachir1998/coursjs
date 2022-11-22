@@ -1,0 +1,17 @@
+{
+  "name": "capge-api",
+  "version": "1.0.0",
+  "description": "Première api Capgemini",
+  "main": "index.js",
+  "scripts": {
+    "test": "jest"
+  },
+  "keywords": [
+    "EPSI"
+  ],
+  "author": "Papis",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.18.2"
+  }
+}
