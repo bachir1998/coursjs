@@ -4,6 +4,7 @@
   "description": "Première api Capgemini",
   "main": "index.js",
   "scripts": {
+    "serve": "nodemon index.js",
     "test": "jest"
   },
   "keywords": [
